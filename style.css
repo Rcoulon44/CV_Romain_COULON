@@ -16,53 +16,76 @@ Designation des polices
   font-weight: normal;
   font-style: normal;
 }
-@@font-face {
-  font-family: "pixie";
-  src: url('fonts/pro-pixie-font/ProcrastinatingPixie-WyVOO.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-p
+body
 {
   font-family: arial;
-  margin-left: 10px;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+/* Mise en forme de l'entête du site */
+
+header
+{
+  background: linear-gradient(90deg,  #00305d, #1c38b1);
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px black;
 }
 
 .nom
 {
-  background-color: #00305d;
-  border-radius: 10px;
   text-align:center;
   font-size: 4.5em;
-  font-family: 'pixie', 'area', 'arial';
+  font-family: 'area', 'arial';
   font-style: normal;
-  font-weight: normal;
-  color: white;
-  box-shadow: 10px 10px 20px black;
+  font-weight: bold;
+  padding-top: 30px;
 }
 
-.flottant
+.titre
 {
-  float: left;
+  font-size: 2.5em;
+  padding-left: 10%;
+}
+
+.entête
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo_profil
+{
+  width : 300px;
 }
 
 .accroche
 {
-  font-size: 1.8em;
-  text-align: justify;
+  font-size: 1.6em;
+  text-align: right;
+  min-width: 150px;
 }
 
 .menu
 {
-  clear:both;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  list-style-type: none;
 }
-
-a:link
+.liste_menu
 {
-  color: gray;
+  display: inline-block;
+  margin:  0 10px 0 10px;
+  padding: 5px;
+}
+.anchor_menu
+{
+  color: white;
+  text-decoration: none;
 }
 
 a:hover
@@ -70,74 +93,128 @@ a:hover
   color: gray;
 }
 
-/*h2
+/* Mise en forme du contenu du site */
+
+.corp
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.experiences
 {
   background-color: #808080;
-  border-radius: 10px;
-  font-size: 2.2em;
-  text-align: center;
-  color: white;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 20px;
+  width: 68%;
+  min-width: 400px;
+  order : 2;
+  margin-top: 20px;
 }
-*/
+
+.competences
+{
+  background-color: #04619e;
+  border-radius: 20px;
+  width: 28%;
+  min-width: 300px;
+  order: 1;
+  margin-top: 20px;
+}
+
+.diplomes
+{
+  background-color: #4c4c4c;
+  border-radius: 20px;
+  width: 68%;
+  min-width: 400px;
+  order : 4;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.loisirs
+{
+  background-color: #04a2c9;
+  border-radius: 20px;
+  width: 28%;
+  min-width: 300px;
+  order: 3;
+  margin-top: 20px;
+}
+
+#experiences,#competences,#diplomes,#loisirs
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+}
 
 .année
 {
   color: #00305d;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
-}
-
-.postes
-{
-  font-size: 1.3em;
-}
-
-.diplomes
-{
-  font-size: 1.3em;
-}
-
-figure
-{
-  margin: auto;
-}
-
-figcaption
-{
-  text-align: center;
+  padding-left: 20px;
+  text-decoration: underline;
 }
 
 ul
 {
-  font-size: 1.3em
+  font-size: 1.8em;
 }
-.experiences
+
+p
 {
-  background-color: #808080;
-  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 1.2em;
 }
-.competences
+
+.postes
 {
-  background-color: #04619e;
-  border-radius: 10px;
-  color: white;
+  font-size: 1.6em;
 }
-.diplomes
+
+/* Mise en forme pour le porte folio */
+
+#porte_folio
 {
-  background-color: #4c4c4c;
-  border-radius: 10px;
-  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+  color: black;
 }
-.loisirs
+
+figure
 {
-  background-color: #04a2c9;
-  border-radius: 10px;
-  color: white;
+  text-align: center;
 }
-.contact
+
+/* Mise en page du pied de page */
+
+footer
 {
   background-color: #00305d;
-  border-radius: 10px;
+  border-radius: 20px 20px 0px 0px;
+  height: 270px;
+}
+
+#contact
+{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 2em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+}
+
+a
+{
   color: white;
 }
